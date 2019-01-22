@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fantasy Houses</title>
+  <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+  <script src="/assets/application-7639e159740e420fed58f1997e9700d087950c6f2dacf7766b65e6eb6b023a77.js"></script>
+  
+</head>
+<body>
+    [&quot;Name can&#39;t be blank&quot;, &quot;Source material can&#39;t be blank&quot;, &quot;Author can&#39;t be blank&quot;]
+  
+<h1>New House Form</h1>
+
+<form class="new_house" id="new_house" action="/houses" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <div class="field">
+    <div class="field_with_errors"><label for="house_name">Name</label></div><br />
+    <div class="field_with_errors"><input type="text" value="" name="house[name]" id="house_name" /></div>
+  </div>
+
+  <div class="field">
+    <div class="field_with_errors"><label for="house_source_material">Source material</label></div><br />
+    <div class="field_with_errors"><input type="text" value="" name="house[source_material]" id="house_source_material" /></div>
+  </div>
+
+  <div class="field">
+    <div class="field_with_errors"><label for="house_author">Author</label></div><br />
+    <div class="field_with_errors"><input type="text" value="" name="house[author]" id="house_author" /></div>
+  </div>
+
+  <div class="field">
+    <label for="house_motto">Motto</label><br />
+    <input type="text" value="" name="house[motto]" id="house_motto" />
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Add House" data-disable-with="Add House" />
+  </div>
+</form>
+
+</body>
+</html>

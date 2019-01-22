@@ -1,0 +1,9 @@
+<h1>Welcome to the Houses Index Page</h1>
+
+<% @houses.each do |house| %>
+  <ul>
+    <li> <%= link_to house.name, house_path(house.id) %> </li>
+  </ul>
+<% end %>
+
+<%= link_to 'Add New House', new_house_path %>
